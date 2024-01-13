@@ -1,0 +1,113 @@
+@import url('https://fonts.maateen.me/kalpurush/font.css');
+
+
+*,
+body,
+html {
+    font-family: 'kalpurush' !important;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.back_to_top {
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    float: right;
+    right: 0;
+    bottom: 0;
+    margin: 0px 20px 20px 0px;
+    animation: backGear 0.9s infinite;
+}
+
+.back_top,
+.back_to_top img {
+    width: 48px;
+    border-radius: 100px;
+}
+
+.back_to_top.visible {
+    display: block;
+}
+
+@keyframes backGear {
+    0% {
+        rotate: 0deg;
+    }
+
+    40% {
+        rotate: 5deg;
+    }
+
+    0% {
+        rotate: 0deg;
+    }
+}
+
+header {
+    background: #f2f3fb;
+    color: #33343d;
+    text-align: center;
+    padding: 16px 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+    position: sticky;
+    top: 0;
+}
+
+h1 {
+    width: 600px;
+}
+
+.file_jump {
+    width: 100%;
+    max-width: 200px;
+}
+
+.table_contents {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 32px;
+    margin: 12px 12px 0px 12px;
+    left: 0;
+}
+
+.poem_link {
+    display: flex;
+    text-align: center;
+    background: #206061;
+    text-decoration: none;
+    outline: none;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 4px;
+}
+
+.poem_link:hover {
+    background: #000;
+}
+pre{
+    padding: 0px 0px 0px 80px;
+}
+.poemname{
+    width: 400px;
+    border: 1.3px rgba(25, 27, 41, 0.092) solid;
+}
+separator{
+    display: none;
+}
+@media screen and (max-width: 660px) {
+    header {
+        font-size: 11px;
+        /* flex-direction: column; */
+    }
+
+    .file_jump {
+        width: 100px;
+    }
+}
