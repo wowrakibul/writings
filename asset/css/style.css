@@ -18,8 +18,12 @@ html {
 	border: none; 
 	background: #000;
 	color: #fff; 
-	}
 	
+	}
+	.ButtonFace a,button a{
+		text-decoration: none;
+		color: #fff; 
+	}
 
 .back_to_top {
     cursor: pointer;
